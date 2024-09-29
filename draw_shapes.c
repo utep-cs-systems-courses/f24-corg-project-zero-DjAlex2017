@@ -25,4 +25,31 @@ void print_triangle(int leftCol, int size)
     putchar('\n');
   }
 }
+void print_arrow(int leftCol, int size, int shaftHeight)
+{
+  // Print the triangle part of the arrow
+  print_triangle(leftCol, size);
 
+  int shaftWidth = size;
+  //Prints the shaft of the arrow
+  for(int row = 0; row < shaftHeight; row++){
+    //Print space before
+    for(int col = 0; col < leftCol + size - shaftWidth / 2; col++){
+      putchar(' ');
+    }
+    //Print shaft
+    for(int col = 0; col < shaftWidth; col++){
+      putchar('*');
+    }
+    putchar('\n');
+  }
+}
+
+
+
+
+
+
+
+
+  

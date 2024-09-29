@@ -40,9 +40,7 @@ int main()
       break;
     case 'n':
     puts("You selected name:");
-    for(char c = 'A'; c < 'X'; c++)
-      print_char_6x8(c);
-    
+      print_char_6x8(
       break;
     default:
       printf("Unrecognized option '%c', please try again!\n", c);
